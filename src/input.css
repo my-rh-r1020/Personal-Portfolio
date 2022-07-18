@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-80;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+  /* backdrop-filter: blur(5px); */
+}
+
+@layer components {
+  .btn-ghost {
+    @apply px-3 py-4 text-sm rounded-lg border-solid border-2 border-primary hover:bg-primaryAlt bg-transparent text-slate-600 transition duration-500;
+  }
+  .title-main {
+    @apply mb-10 font-poppins text-center;
+  }
+  .text-title {
+    @apply text-xl text-primary uppercase font-semibold;
+  }
+  .text-subtitle {
+    @apply text-[13px] text-slate-400;
+  }
+  .header-nav {
+    @apply bg-transparent absolute top-0 left-0 w-full flex items-center z-10;
+  }
+  .nav-menu {
+    @apply bottom-4 left-0 right-0 w-[328px] h-[72px] bg-navMenu backdrop-blur-[10px] fixed m-auto px-2 py-6 shadow-md rounded-xl overflow-hidden scale-75 sm:scale-90 md:scale-100 lg:scale-110;
+  }
+  .nav-list {
+    @apply flex justify-center gap-8;
+  }
+  .nav-link {
+    @apply flex flex-col items-center;
+  }
+  .nav-link i {
+    @apply text-2xl text-icons z-20 transition duration-300;
+  }
+  .nav-name {
+    @apply text-[10px] text-iconsSub absolute font-semibold transition duration-[400] translate-y-[50px] z-20 opacity-0;
+  }
+  .indicator {
+    @apply left-[5px] bottom-0 fill-primary absolute transition duration-300;
+  }
+  .active-link i {
+    @apply text-iconsSub;
+  }
+  .active-link .nav-name {
+    @apply opacity-100 translate-y-[28px];
+  }
+  .nav-link:nth-child(1).active-link ~ .indicator {
+    @apply translate-x-[calc(56px*0)];
+  }
+  .nav-link:nth-child(2).active-link ~ .indicator {
+    @apply translate-x-[calc(56px*1)];
+  }
+  .nav-link:nth-child(3).active-link ~ .indicator {
+    @apply translate-x-[calc(56px*2)];
+  }
+  .nav-link:nth-child(4).active-link ~ .indicator {
+    @apply translate-x-[calc(56px*3)];
+  }
+  .nav-link:nth-child(5).active-link ~ .indicator {
+    @apply translate-x-[calc(56px*4)];
+  }
+  .portfolio-card {
+    @apply p-5 overflow-hidden rounded-lg;
+    box-shadow: 0 2px 16px rgba(11, 17, 30, 0.1);
+  }
+  .portfolio-title {
+    @apply text-base font-semibold mb-2 truncate;
+  }
+  .portfolio-desc {
+    @apply text-slate-600 text-justify text-[14px] mb-[10px];
+  }
+  .footer-link {
+    @apply hover:text-iconsSub transition duration-500;
+  }
+}

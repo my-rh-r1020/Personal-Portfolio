@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="dist/output.css" />
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Remixicons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+    <title>Portfolio - Tailwind CSS</title>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <header class="header-nav">
+      <nav class="container">
+        <div class="flex items-center justify-between relative">
+          <!-- Logo -->
+          <div class="px-4 py-6">
+            <a href="#home" class="font-semibold text-primary block">Rifaldi H</a>
+          </div>
+          <!-- Nav Menu -->
+          <div class="nav-menu">
+            <ul class="nav-list">
+              <a href="#home" class="nav-link active-link"><i class="ri-home-4-fill"></i><span class="nav-name">Home</span></a>
+              <a href="#about" class="nav-link"><i class="ri-user-3-fill"></i><span class="nav-name">Profile</span></a>
+              <a href="#skills" class="nav-link"><i class="ri-book-2-fill"></i><span class="nav-name">Skills</span></a>
+              <a href="#portfolio" class="nav-link"><i class="ri-briefcase-4-fill"></i><span class="nav-name">Portfolio</span></a>
+              <a href="#contact" class="nav-link"><i class="ri-message-2-fill"></i><span class="nav-name">Contact</span></a>
+
+              <svg class="indicator" width="94" height="56" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="47" cy="28" rx="24" ry="28" />
+                <path d="M24 20C24 20 28 55.9999 48 56L0 55.9997C18 55.9998 24 20 24 20Z" />
+                <path d="M70 20C70 20 66 55.9999 46 56L94 55.9997C76 55.9998 70 20 70 20Z" />
+              </svg>
+            </ul>
+          </div>
+
+          <!-- Theme Change Button -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-28">
+      <div class="container">
+        <!-- Automatic Column View -->
+        <div class="flex flex-wrap">
+          <!-- Greetings -->
+          <div class="w-full self-center text-center font-poppins px-4 lg:w-1/2 lg:text-left">
+            <h1 class="text-base font-semibold text-secondary md:text-lg">Hello 👋, I'm <span class="block text-4xl font-bold text-dark my-1 lg:text-[40px]">Rifaldi Herikson</span></h1>
+            <h3 class="text-base font-semibold mb-5 text-secondary md:text-lg">Web Programmer</h3>
+            <p class="text-secondary text-base mb-10 leading-relaxed md:text-lg">This portfolio website was developed with HTML and CSS Framework namely <span class="font-semibold">Tailwind CSS.</span></p>
+            <a href="#" class="btn-ghost mb-10"><i class="bx bxs-download bx-burst mr-2"></i>Download CV</a>
+          </div>
+          <!-- Profile Img -->
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-0 lg:right-0">
+              <img src="dist/img/profile-img.png" alt="profile-img" class="max-w-full mx-auto rounded-xl" />
+              <span class="absolute bottom-5 -z-10 left-1/2 -translate-x-1/2 md:scale-110 lg:scale-125">
+                <img src="dist/img/blob.svg" alt="blob" />
+                <!-- <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#77bef8"
+                    d="M67.6,-22.3C74.6,-0.5,58.2,28.5,35.2,44.2C12.2,59.9,-17.4,62.3,-39.8,47.7C-62.2,33.1,-77.3,1.5,-69.5,-21.4C-61.7,-44.4,-30.8,-58.7,-0.3,-58.6C30.3,-58.5,60.6,-44,67.6,-22.3Z"
+                    transform="translate(100 100) scale(1.1)"
+                  />
+                </svg> -->
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="pt-28">
+      <div class="container">
+        <div class="title-main">
+          <h2 class="text-title">About Me</h2>
+          <span class="block text-subtitle">My Profile</span>
+        </div>
+        <div class="flex flex-wrap">
+          <!-- Introduction -->
+          <div class="w-full px-4 mb-5 font-poppins text-center lg:w-1/2">
+            <div class="text-secondary text-base lg:text-justify p-4 mb-8">
+              <span class="font-semibold">Halo,</span> Saya Rifaldi Herikson, S.Kom dari Kota Tanjungpinang, Kepulauan Riau. Lulusan S-1 Sistem Informasi dari Universitas Komputer Indonesia. Dapat bekerja sama dan berkontribusi dalam tim.
+              Memiliki pengalaman sebagai Web Programmer dan Enterprise Architect.
+            </div>
+            <div class="mb-10 lg:text-left lg:ml-4">
+              <a href="#contact" class="btn-ghost">Contact Me</a>
+            </div>
+          </div>
+          <!-- Education -->
+          <div class="w-full px-4 font-poppins lg:w-1/2 lg:mt-4">
+            <div class="mx-auto columns-3 text-center gap-2">
+              <div class="px-3 py-4 mb-2 rounded-xl border border-slate-200 shadow-md">
+                <h3 class="text-sm font-semibold">Experience</h3>
+                <span class="block text-[10px]">1 year Working</span>
+              </div>
+              <div class="px-5 py-4 mb-2 rounded-xl border border-slate-200 shadow-md">
+                <h3 class="text-sm font-semibold">Completed</h3>
+                <span class="block text-[10px]">2 Projects</span>
+              </div>
+              <div class="px-5 py-4 mb-2 rounded-xl border border-slate-200 shadow-md">
+                <h3 class="text-sm font-semibold">Support</h3>
+                <span class="block text-[10px]">Online</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section id="skills" class="pt-28">
+      <div class="container">
+        <div class="title-main">
+          <h2 class="text-title">Skills</h2>
+          <span class="block text-subtitle">My Abilities</span>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 font-poppins text-center"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="pt-28">
+      <div class="container">
+        <div class="title-main">
+          <h2 class="text-title">Portfolio</h2>
+          <span class="block text-subtitle">Recent Projects</span>
+        </div>
+        <div class="w-full px-4 font-poppins flex flex-wrap justify-center lg:w-10/12 lg:mx-auto">
+          <div class="p-4 md:w-1/2">
+            <div class="portfolio-card">
+              <img src="dist/img/work1.jpg" alt="projects-img" width="w-full" class="rounded-xl mb-4" />
+              <h3 class="portfolio-title">Landing Page Tailwind CSS</h3>
+              <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
+              <a href="#" class="text-[13px] text-secondary hover:text-primaryAlt transition duration-500">Demo</a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2">
+            <div class="portfolio-card">
+              <img src="dist/img/work2.jpg" alt="projects-img" width="w-full" class="rounded-xl mb-4" />
+              <h3 class="portfolio-title">Event Ticket Sales Web</h3>
+              <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
+              <a href="#" class="text-[13px] text-secondary hover:text-primaryAlt transition duration-500">Demo</a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2">
+            <div class="portfolio-card">
+              <img src="dist/img/work3.jpg" alt="projects-img" width="w-full" class="rounded-xl mb-4" />
+              <h3 class="portfolio-title">E-Learning Web</h3>
+              <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
+              <a href="#" class="text-[13px] text-secondary hover:text-primaryAlt transition duration-500">Demo</a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2">
+            <div class="portfolio-card">
+              <img src="dist/img/work4.jpg" alt="projects-img" width="w-full" class="rounded-xl mb-4" />
+              <h3 class="portfolio-title">Financial Report Web</h3>
+              <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
+              <a href="#" class="text-[13px] text-secondary hover:text-primaryAlt transition duration-500">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="pt-28 pb-32">
+      <div class="container">
+        <div class="title-main">
+          <h2 class="text-title">Contact Me</h2>
+          <span class="block text-subtitle">Get In Touch</span>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 font-poppins text-center"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary pt-16 pb-12">
+      <div class="container">
+        <h2 class="font-bold text-icons text-3xl px-4 mb-5">Rifaldi H</h2>
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-icons font-medium md:w-1/2">
+            <h3 class="font-semibold text-xl mb-2 underline">Hubungi Saya</h3>
+            <p class="text-slate-600">email@gmail.com</p>
+            <p class="text-slate-600">Kepulauan Riau</p>
+          </div>
+          <div class="w-full px-4 mb-12 text-icons font-medium md:w-1/2">
+            <h3 class="font-semibold text-xl mb-2 underline">Tautan</h3>
+            <ul class="text-sm flex justify-start gap-6">
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#about" class="footer-link">Profile</a></li>
+              <li><a href="#skills" class="footer-link">Skill</a></li>
+              <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full pt-10 border-t border-slate-400">
+          <span class="text-icons text-sm ml-4">&#169; 2022 <span class="font-semibold">Rifaldi H</span>. All Rights Reserved</span>
+        </div>
+        <!-- <ul class="text-icons text-sm flex justify-start gap-6 mb-1">
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+        </ul> -->
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="dist/js/main.js"></script>
+  </body>
+</html>
