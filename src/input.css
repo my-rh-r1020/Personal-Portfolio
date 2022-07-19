@@ -10,22 +10,22 @@
 
 @layer components {
   .btn-ghost {
-    @apply px-3 py-4 text-sm rounded-lg border-solid border-2 border-primary hover:bg-primaryAlt bg-transparent text-slate-600 transition duration-500;
+    @apply rounded-lg border-2 border-solid border-primary bg-transparent px-3 py-4 text-sm text-slate-600 transition duration-500 hover:bg-primaryAlt;
   }
   .title-main {
-    @apply mb-10 font-poppins text-center;
+    @apply mb-10 text-center font-poppins;
   }
   .text-title {
-    @apply text-xl text-primary uppercase font-semibold;
+    @apply text-2xl font-semibold uppercase text-primary;
   }
   .text-subtitle {
     @apply text-[13px] text-slate-400;
   }
   .header-nav {
-    @apply bg-transparent absolute top-0 left-0 w-full flex items-center z-10;
+    @apply absolute top-0 left-0 z-10 flex w-full items-center bg-transparent;
   }
   .nav-menu {
-    @apply bottom-4 left-0 right-0 w-[328px] h-[72px] bg-navMenu backdrop-blur-[10px] fixed m-auto px-2 py-6 shadow-md rounded-xl overflow-hidden scale-75 sm:scale-90 md:scale-100 lg:scale-110;
+    @apply fixed bottom-4 left-0 right-0 m-auto h-[72px] w-[328px] scale-75 overflow-hidden rounded-xl bg-navMenu px-2 py-6 shadow-md backdrop-blur-[10px] sm:scale-90 md:scale-100 lg:scale-110;
   }
   .nav-list {
     @apply flex justify-center gap-8;
@@ -34,19 +34,19 @@
     @apply flex flex-col items-center;
   }
   .nav-link i {
-    @apply text-2xl text-icons z-20 transition duration-300;
+    @apply z-20 text-2xl text-icons transition duration-300;
   }
   .nav-name {
-    @apply text-[10px] text-iconsSub absolute font-semibold transition duration-[400] translate-y-[50px] z-20 opacity-0;
+    @apply absolute z-20 translate-y-[50px] text-[10px] font-semibold text-iconsSub opacity-0 transition duration-[400];
   }
   .indicator {
-    @apply left-[5px] bottom-0 fill-primary absolute transition duration-300;
+    @apply absolute left-[5px] bottom-0 fill-primary transition duration-300;
   }
   .active-link i {
     @apply text-iconsSub;
   }
   .active-link .nav-name {
-    @apply opacity-100 translate-y-[28px];
+    @apply translate-y-[28px] opacity-100;
   }
   .nav-link:nth-child(1).active-link ~ .indicator {
     @apply translate-x-[calc(56px*0)];
@@ -63,17 +63,29 @@
   .nav-link:nth-child(5).active-link ~ .indicator {
     @apply translate-x-[calc(56px*4)];
   }
+  .work-card {
+    @apply mb-2 rounded-xl border border-slate-200 px-3 py-4 shadow-md;
+  }
+  .work-title {
+    @apply mb-1 text-sm font-semibold;
+  }
+  .work-subtitle {
+    @apply block text-[12px];
+  }
   .portfolio-card {
-    @apply p-5 overflow-hidden rounded-lg;
+    @apply overflow-hidden rounded-lg p-5;
     box-shadow: 0 2px 16px rgba(11, 17, 30, 0.1);
   }
   .portfolio-title {
-    @apply text-base font-semibold mb-2 truncate;
+    @apply mb-2 truncate text-base font-semibold;
   }
   .portfolio-desc {
-    @apply text-slate-600 text-justify text-[14px] mb-[10px];
+    @apply mb-[10px] text-justify text-[14px] text-slate-600;
+  }
+  .contact-icons {
+    @apply mr-7 flex h-16 w-16 items-center justify-center rounded-full border-2 border-solid border-slate-300 text-slate-400 transition duration-500;
   }
   .footer-link {
-    @apply hover:text-iconsSub transition duration-500;
+    @apply transition duration-500 hover:text-iconsSub;
   }
 }

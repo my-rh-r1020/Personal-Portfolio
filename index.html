@@ -23,10 +23,10 @@
     <!-- Navbar Section -->
     <header class="header-nav">
       <nav class="container">
-        <div class="flex items-center justify-between relative">
+        <div class="relative flex items-center justify-between">
           <!-- Logo -->
           <div class="px-4 py-6">
-            <a href="#home" class="font-semibold text-primary block">Rifaldi H</a>
+            <a href="#home" class="block font-semibold text-primary">Rifaldi H</a>
           </div>
           <!-- Nav Menu -->
           <div class="nav-menu">
@@ -51,22 +51,22 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-28">
+    <section id="home" class="py-28">
       <div class="container">
         <!-- Automatic Column View -->
         <div class="flex flex-wrap">
           <!-- Greetings -->
-          <div class="w-full self-center text-center font-poppins px-4 lg:w-1/2 lg:text-left">
-            <h1 class="text-base font-semibold text-secondary md:text-lg">Hello 👋, I'm <span class="block text-4xl font-bold text-dark my-1 lg:text-[40px]">Rifaldi Herikson</span></h1>
-            <h3 class="text-base font-semibold mb-5 text-secondary md:text-lg">Web Programmer</h3>
-            <p class="text-secondary text-base mb-10 leading-relaxed md:text-lg">This portfolio website was developed with HTML and CSS Framework namely <span class="font-semibold">Tailwind CSS.</span></p>
+          <div class="w-full self-center px-4 text-center font-poppins lg:w-1/2 lg:text-left">
+            <h1 class="text-base font-semibold text-secondary md:text-lg">Hello 👋, I'm <span class="my-1 block text-4xl font-bold text-dark lg:text-[40px]">Rifaldi Herikson</span></h1>
+            <h3 class="mb-5 text-base font-semibold text-secondary md:text-lg">Web Programmer</h3>
+            <p class="mb-10 text-base leading-relaxed text-secondary md:text-lg">This portfolio website was developed with HTML and CSS Framework namely <span class="font-semibold">Tailwind CSS.</span></p>
             <a href="#" class="btn-ghost mb-10"><i class="bx bxs-download bx-burst mr-2"></i>Download CV</a>
           </div>
           <!-- Profile Img -->
           <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:mt-0 lg:right-0">
-              <img src="dist/img/profile-img.png" alt="profile-img" class="max-w-full mx-auto rounded-xl" />
-              <span class="absolute bottom-5 -z-10 left-1/2 -translate-x-1/2 md:scale-110 lg:scale-125">
+            <div class="relative mt-10 lg:right-0 lg:mt-0">
+              <img src="dist/img/profile-img.png" alt="profile-img" class="mx-auto max-w-full rounded-xl" />
+              <span class="absolute bottom-5 left-1/2 -z-10 -translate-x-1/2 md:scale-110 lg:scale-125">
                 <img src="dist/img/blob.svg" alt="blob" />
                 <!-- <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -83,37 +83,37 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="pt-28">
+    <section id="about" class="py-24">
       <div class="container">
         <div class="title-main">
           <h2 class="text-title">About Me</h2>
-          <span class="block text-subtitle">My Profile</span>
+          <span class="text-subtitle block">My Profile</span>
         </div>
         <div class="flex flex-wrap">
           <!-- Introduction -->
-          <div class="w-full px-4 mb-5 font-poppins text-center lg:w-1/2">
-            <div class="text-secondary text-base lg:text-justify p-4 mb-8">
+          <div class="mb-5 w-full px-4 text-center font-poppins lg:w-1/2">
+            <div class="mb-8 p-4 text-base text-secondary lg:text-justify">
               <span class="font-semibold">Halo,</span> Saya Rifaldi Herikson, S.Kom dari Kota Tanjungpinang, Kepulauan Riau. Lulusan S-1 Sistem Informasi dari Universitas Komputer Indonesia. Dapat bekerja sama dan berkontribusi dalam tim.
               Memiliki pengalaman sebagai Web Programmer dan Enterprise Architect.
             </div>
-            <div class="mb-10 lg:text-left lg:ml-4">
+            <div class="mb-10 lg:ml-4 lg:text-left">
               <a href="#contact" class="btn-ghost">Contact Me</a>
             </div>
           </div>
-          <!-- Education -->
-          <div class="w-full px-4 font-poppins lg:w-1/2 lg:mt-4">
-            <div class="mx-auto columns-3 text-center gap-2">
-              <div class="px-3 py-4 mb-2 rounded-xl border border-slate-200 shadow-md">
-                <h3 class="text-sm font-semibold">Experience</h3>
-                <span class="block text-[10px]">1 year Working</span>
+          <!-- Work Experience -->
+          <div class="flex w-full gap-2 px-4 font-poppins lg:mt-4 lg:w-1/2">
+            <div class="w-1/2 text-center">
+              <div class="work-card">
+                <i class="bx bx-award py-3 text-xl"></i>
+                <h3 class="work-title">Working Experience</h3>
+                <span class="work-subtitle">1 year</span>
               </div>
-              <div class="px-5 py-4 mb-2 rounded-xl border border-slate-200 shadow-md">
-                <h3 class="text-sm font-semibold">Completed</h3>
-                <span class="block text-[10px]">2 Projects</span>
-              </div>
-              <div class="px-5 py-4 mb-2 rounded-xl border border-slate-200 shadow-md">
-                <h3 class="text-sm font-semibold">Support</h3>
-                <span class="block text-[10px]">Online</span>
+            </div>
+            <div class="w-1/2 text-center">
+              <div class="work-card">
+                <i class="bx bx-briefcase-alt-2 py-3 text-lg"></i>
+                <h3 class="work-title">Completed Projects</h3>
+                <span class="work-subtitle">2 Projects</span>
               </div>
             </div>
           </div>
@@ -122,56 +122,56 @@
     </section>
 
     <!-- Skill Section -->
-    <section id="skills" class="pt-28">
+    <section id="skills" class="py-24">
       <div class="container">
         <div class="title-main">
           <h2 class="text-title">Skills</h2>
-          <span class="block text-subtitle">My Abilities</span>
+          <span class="text-subtitle block">My Abilities</span>
         </div>
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 font-poppins text-center"></div>
+          <div class="mb-10 w-full px-4 text-center font-poppins"></div>
         </div>
       </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="pt-28">
+    <section id="portfolio" class="py-24">
       <div class="container">
         <div class="title-main">
           <h2 class="text-title">Portfolio</h2>
-          <span class="block text-subtitle">Recent Projects</span>
+          <span class="text-subtitle block">Recent Projects</span>
         </div>
-        <div class="w-full px-4 font-poppins flex flex-wrap justify-center lg:w-10/12 lg:mx-auto">
+        <div class="flex w-full flex-wrap justify-center px-4 font-poppins lg:mx-auto lg:w-10/12">
           <div class="p-4 md:w-1/2">
             <div class="portfolio-card">
-              <img src="dist/img/work1.jpg" alt="projects-img" width="w-full" class="rounded-xl mb-4" />
+              <img src="dist/img/work1.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
               <h3 class="portfolio-title">Landing Page Tailwind CSS</h3>
               <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-              <a href="#" class="text-[13px] text-secondary hover:text-primaryAlt transition duration-500">Demo</a>
+              <a href="#" class="text-[13px] text-secondary transition duration-500 hover:text-primaryAlt">Demo</a>
             </div>
           </div>
           <div class="p-4 md:w-1/2">
             <div class="portfolio-card">
-              <img src="dist/img/work2.jpg" alt="projects-img" width="w-full" class="rounded-xl mb-4" />
+              <img src="dist/img/work2.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
               <h3 class="portfolio-title">Event Ticket Sales Web</h3>
               <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-              <a href="#" class="text-[13px] text-secondary hover:text-primaryAlt transition duration-500">Demo</a>
+              <a href="#" class="text-[13px] text-secondary transition duration-500 hover:text-primaryAlt">Demo</a>
             </div>
           </div>
           <div class="p-4 md:w-1/2">
             <div class="portfolio-card">
-              <img src="dist/img/work3.jpg" alt="projects-img" width="w-full" class="rounded-xl mb-4" />
+              <img src="dist/img/work3.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
               <h3 class="portfolio-title">E-Learning Web</h3>
               <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-              <a href="#" class="text-[13px] text-secondary hover:text-primaryAlt transition duration-500">Demo</a>
+              <a href="#" class="text-[13px] text-secondary transition duration-500 hover:text-primaryAlt">Demo</a>
             </div>
           </div>
           <div class="p-4 md:w-1/2">
             <div class="portfolio-card">
-              <img src="dist/img/work4.jpg" alt="projects-img" width="w-full" class="rounded-xl mb-4" />
+              <img src="dist/img/work4.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
               <h3 class="portfolio-title">Financial Report Web</h3>
               <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-              <a href="#" class="text-[13px] text-secondary hover:text-primaryAlt transition duration-500">Demo</a>
+              <a href="#" class="text-[13px] text-secondary transition duration-500 hover:text-primaryAlt">Demo</a>
             </div>
           </div>
         </div>
@@ -179,14 +179,20 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="pt-28 pb-32">
+    <section id="contact" class="pt-24 pb-28">
       <div class="container">
         <div class="title-main">
           <h2 class="text-title">Contact Me</h2>
-          <span class="block text-subtitle">Get In Touch</span>
+          <span class="text-subtitle block">Get In Touch</span>
         </div>
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 font-poppins text-center"></div>
+          <div class="mb-10 w-full px-4 text-center font-poppins">
+            <div class="my-4 flex items-center justify-center">
+              <a href="#" class="contact-icons hover:border-linkedin hover:text-linkedin"><i class="bx bxl-linkedin-square text-5xl"></i> </a>
+              <a href="#" class="contact-icons hover:border-github hover:text-github"><i class="bx bxl-github text-5xl"></i></a>
+              <a href="#" class="contact-icons hover:border-whatsapp hover:text-whatsapp"><i class="bx bxl-whatsapp text-5xl"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -194,16 +200,16 @@
     <!-- Footer -->
     <footer class="bg-primary pt-16 pb-12">
       <div class="container">
-        <h2 class="font-bold text-icons text-3xl px-4 mb-5">Rifaldi H</h2>
+        <h2 class="mb-5 px-4 text-3xl font-bold text-icons">Rifaldi H</h2>
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-12 text-icons font-medium md:w-1/2">
-            <h3 class="font-semibold text-xl mb-2 underline">Hubungi Saya</h3>
+          <div class="mb-12 w-full px-4 font-medium text-icons md:w-1/2">
+            <h3 class="mb-2 text-xl font-semibold underline">Hubungi Saya</h3>
             <p class="text-slate-600">email@gmail.com</p>
             <p class="text-slate-600">Kepulauan Riau</p>
           </div>
-          <div class="w-full px-4 mb-12 text-icons font-medium md:w-1/2">
-            <h3 class="font-semibold text-xl mb-2 underline">Tautan</h3>
-            <ul class="text-sm flex justify-start gap-6">
+          <div class="mb-12 w-full px-4 font-medium text-icons md:w-1/2">
+            <h3 class="mb-2 text-xl font-semibold underline">Tautan</h3>
+            <ul class="flex justify-start gap-6 text-sm">
               <li><a href="#home" class="footer-link">Home</a></li>
               <li><a href="#about" class="footer-link">Profile</a></li>
               <li><a href="#skills" class="footer-link">Skill</a></li>
@@ -213,8 +219,8 @@
           </div>
         </div>
 
-        <div class="w-full pt-10 border-t border-slate-400">
-          <span class="text-icons text-sm ml-4">&#169; 2022 <span class="font-semibold">Rifaldi H</span>. All Rights Reserved</span>
+        <div class="w-full border-t border-slate-400 pt-10">
+          <span class="ml-4 text-sm text-icons">&#169; 2022 <span class="font-semibold">Rifaldi H</span>. All Rights Reserved</span>
         </div>
         <!-- <ul class="text-icons text-sm flex justify-start gap-6 mb-1">
           <li><a href="#about" class="footer-link">About</a></li>

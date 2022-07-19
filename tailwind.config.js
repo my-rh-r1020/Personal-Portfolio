@@ -16,6 +16,9 @@ module.exports = {
         icons: "#272a3f",
         navMenu: "#dde3ee",
         iconsSub: "#fafbff",
+        linkedin: "#0077B5",
+        github: "#171515",
+        whatsapp: "#25D366",
       },
       fontFamily: {
         poppins: "Poppins",
