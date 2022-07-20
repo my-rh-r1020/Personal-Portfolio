@@ -18,6 +18,14 @@
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 
     <title>Portfolio - Tailwind CSS</title>
+
+    <script>
+      if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
   </head>
   <body>
     <!-- Navbar Section -->
@@ -81,8 +89,8 @@
           <!-- Profile Img -->
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-10 lg:right-0 lg:mt-0">
-              <img src="dist/img/profile-img.png" alt="profile-img" class="mx-auto max-w-full rounded-xl" />
-              <span class="absolute bottom-5 left-1/2 -z-10 -translate-x-1/2 md:scale-110 lg:scale-125">
+              <img src="dist/img/profile-img.png" alt="profile-img" class="relative z-10 mx-auto max-w-full rounded-xl" />
+              <span class="absolute bottom-5 left-1/2 -translate-x-1/2 md:scale-110 lg:scale-125">
                 <img src="dist/img/blob.svg" alt="blob" />
                 <!-- <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -120,14 +128,14 @@
           <div class="flex w-full gap-2 px-4 font-poppins lg:mt-4 lg:w-1/2">
             <div class="w-1/2 text-center">
               <div class="work-card">
-                <i class="bx bx-award py-3 text-xl"></i>
+                <i class="bx bx-award"></i>
                 <h3 class="work-title">Working Experience</h3>
                 <span class="work-subtitle">1 year</span>
               </div>
             </div>
             <div class="w-1/2 text-center">
               <div class="work-card">
-                <i class="bx bx-briefcase-alt-2 py-3 text-lg"></i>
+                <i class="bx bx-briefcase-alt-2"></i>
                 <h3 class="work-title">Completed Projects</h3>
                 <span class="work-subtitle">2 Projects</span>
               </div>
@@ -138,7 +146,7 @@
     </section>
 
     <!-- Skill Section -->
-    <section id="skills" class="py-24">
+    <section id="skills" class="dark-mode py-24">
       <div class="container">
         <div class="title-main">
           <h2 class="text-title">Skills</h2>
@@ -151,7 +159,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-24">
+    <section id="portfolio" class="dark-mode py-24">
       <div class="container">
         <div class="title-main">
           <h2 class="text-title">Portfolio</h2>
@@ -163,7 +171,7 @@
               <img src="dist/img/work1.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
               <h3 class="portfolio-title">Landing Page Tailwind CSS</h3>
               <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-              <a href="#" class="text-[13px] text-secondary transition duration-500 hover:text-primaryAlt">Demo</a>
+              <a href="#" class="portfolio-link">Demo</a>
             </div>
           </div>
           <div class="p-4 md:w-1/2">
@@ -171,7 +179,7 @@
               <img src="dist/img/work2.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
               <h3 class="portfolio-title">Event Ticket Sales Web</h3>
               <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-              <a href="#" class="text-[13px] text-secondary transition duration-500 hover:text-primaryAlt">Demo</a>
+              <a href="#" class="portfolio-link">Demo</a>
             </div>
           </div>
           <div class="p-4 md:w-1/2">
@@ -179,7 +187,7 @@
               <img src="dist/img/work3.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
               <h3 class="portfolio-title">E-Learning Web</h3>
               <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-              <a href="#" class="text-[13px] text-secondary transition duration-500 hover:text-primaryAlt">Demo</a>
+              <a href="#" class="portfolio-link">Demo</a>
             </div>
           </div>
           <div class="p-4 md:w-1/2">
@@ -187,7 +195,7 @@
               <img src="dist/img/work4.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
               <h3 class="portfolio-title">Financial Report Web</h3>
               <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-              <a href="#" class="text-[13px] text-secondary transition duration-500 hover:text-primaryAlt">Demo</a>
+              <a href="#" class="portfolio-link">Demo</a>
             </div>
           </div>
         </div>
@@ -195,7 +203,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="pt-24 pb-28">
+    <section id="contact" class="dark-mode pt-24 pb-28">
       <div class="container">
         <div class="title-main">
           <h2 class="text-title">Contact Me</h2>

@@ -50,5 +50,19 @@ const darkToggle = document.getElementById("dark-toggle"),
   htmlMode = document.querySelector("html");
 
 darkToggle.addEventListener("click", function () {
-  darkToggle.checked ? htmlMode.classList.add("dark") : htmlMode.classList.remove("dark");
+  if (darkToggle.checked) {
+    htmlMode.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    htmlMode.classList.remove("dark");
+    localStorage.theme = "light";
+  }
 });
+
+// ========================= Toggle Move According Mode ===============================
+
+if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+  darkToggle.checked = true;
+} else {
+  darkToggle.checked = false;
+}

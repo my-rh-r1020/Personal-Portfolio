@@ -67,26 +67,32 @@
     @apply translate-x-5;
   }
   .work-card {
-    @apply mb-2 rounded-xl border border-slate-200 px-3 py-4 shadow-md;
+    @apply mb-2 rounded-xl border border-slate-200 px-3 py-4 shadow-md dark:bg-darkThemeNav;
+  }
+  .work-card i {
+    @apply py-3 text-xl dark:text-iconsSub;
   }
   .work-title {
-    @apply mb-1 text-sm font-semibold;
+    @apply mb-1 text-sm font-semibold dark:text-iconsSub;
   }
   .work-subtitle {
-    @apply block text-[12px];
+    @apply block text-[12px] dark:text-iconsSub;
   }
   .portfolio-card {
-    @apply overflow-hidden rounded-lg p-5;
+    @apply overflow-hidden rounded-lg p-5 dark:bg-darkThemeNav;
     box-shadow: 0 2px 16px rgba(11, 17, 30, 0.1);
   }
   .portfolio-title {
-    @apply mb-2 truncate text-base font-semibold;
+    @apply mb-2 truncate text-base font-semibold dark:text-iconsSub;
   }
   .portfolio-desc {
-    @apply mb-[10px] text-justify text-[14px] text-slate-600;
+    @apply mb-[10px] text-justify text-[14px] text-slate-600 dark:text-iconsSub;
+  }
+  .portfolio-link {
+    @apply text-[13px] text-secondary transition duration-500 hover:text-primaryAlt dark:text-primary;
   }
   .contact-card {
-    @apply scale-90 rounded-2xl bg-slate-100 py-14 text-center transition duration-500 hover:scale-95 hover:bg-slate-300 md:scale-95 md:hover:scale-100 lg:scale-100 lg:hover:scale-110;
+    @apply scale-90 rounded-2xl bg-slate-100 py-14 text-center transition duration-500 hover:scale-95 hover:bg-slate-300 dark:bg-darkThemeNav dark:hover:bg-slate-300 md:scale-95 md:hover:scale-100 lg:scale-100 lg:hover:scale-110;
   }
   .contact-title {
     @apply text-base font-semibold md:text-lg lg:text-xl;

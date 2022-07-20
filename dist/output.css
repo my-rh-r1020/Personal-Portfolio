@@ -852,6 +852,23 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.dark .work-card {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 37 54 / var(--tw-bg-opacity));
+}
+
+.work-card i {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.dark .work-card i {
+  --tw-text-opacity: 1;
+  color: rgb(250 251 255 / var(--tw-text-opacity));
+}
+
 .work-title {
   margin-bottom: 0.25rem;
   font-size: 0.875rem;
@@ -859,15 +876,33 @@ video {
   font-weight: 600;
 }
 
+.dark .work-title {
+  --tw-text-opacity: 1;
+  color: rgb(250 251 255 / var(--tw-text-opacity));
+}
+
 .work-subtitle {
   display: block;
   font-size: 12px;
+}
+
+.dark .work-subtitle {
+  --tw-text-opacity: 1;
+  color: rgb(250 251 255 / var(--tw-text-opacity));
 }
 
 .portfolio-card {
   overflow: hidden;
   border-radius: 0.5rem;
   padding: 1.25rem;
+}
+
+.dark .portfolio-card {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 37 54 / var(--tw-bg-opacity));
+}
+
+.portfolio-card {
   box-shadow: 0 2px 16px rgba(11, 17, 30, 0.1);
 }
 
@@ -881,12 +916,43 @@ video {
   font-weight: 600;
 }
 
+.dark .portfolio-title {
+  --tw-text-opacity: 1;
+  color: rgb(250 251 255 / var(--tw-text-opacity));
+}
+
 .portfolio-desc {
   margin-bottom: 10px;
   text-align: justify;
   font-size: 14px;
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.dark .portfolio-desc {
+  --tw-text-opacity: 1;
+  color: rgb(250 251 255 / var(--tw-text-opacity));
+}
+
+.portfolio-link {
+  font-size: 13px;
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.portfolio-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(100 181 247 / var(--tw-text-opacity));
+}
+
+.dark .portfolio-link {
+  --tw-text-opacity: 1;
+  color: rgb(119 190 248 / var(--tw-text-opacity));
 }
 
 .contact-card {
@@ -910,6 +976,16 @@ video {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.dark .contact-card {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 37 54 / var(--tw-bg-opacity));
+}
+
+.dark .contact-card:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
@@ -1046,8 +1122,8 @@ video {
   left: 50%;
 }
 
-.-z-10 {
-  z-index: -10;
+.z-10 {
+  z-index: 10;
 }
 
 .my-1 {
@@ -1266,11 +1342,6 @@ video {
   padding-bottom: 6rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .pt-24 {
   padding-top: 6rem;
 }
@@ -1314,20 +1385,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-\[13px\] {
-  font-size: 13px;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -1336,6 +1393,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold {
@@ -1401,10 +1463,6 @@ video {
   transition-duration: 300ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
-}
-
 .scroll-fixed {
   position: fixed;
   z-index: 9999;
@@ -1435,11 +1493,6 @@ video {
 .hover\:border-whatsapp:hover {
   --tw-border-opacity: 1;
   border-color: rgb(37 211 102 / var(--tw-border-opacity));
-}
-
-.hover\:text-primaryAlt:hover {
-  --tw-text-opacity: 1;
-  color: rgb(100 181 247 / var(--tw-text-opacity));
 }
 
 .hover\:text-linkedin:hover {
