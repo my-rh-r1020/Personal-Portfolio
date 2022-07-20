@@ -46,20 +46,36 @@
           </div>
 
           <!-- Theme Change Button -->
+          <div class="flex">
+            <span class="mr-2 text-sm text-slate-500">Light</span>
+            <input type="checkbox" class="hidden" id="dark-toggle" />
+            <label for="dark-toggle">
+              <div class="flex h-5 w-10 cursor-pointer items-center rounded-full bg-slate-500 p-0.5">
+                <div class="hidden">
+                  <i class="bx bxs-sun"></i>
+                </div>
+                <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300"></div>
+                <div class="hidden">
+                  <i class="bx bxs-moon"></i>
+                </div>
+              </div>
+            </label>
+            <span class="ml-2 text-sm text-slate-500">Dark</span>
+          </div>
         </div>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="py-28">
+    <section id="home" class="dark-mode py-28">
       <div class="container">
         <!-- Automatic Column View -->
         <div class="flex flex-wrap">
           <!-- Greetings -->
           <div class="w-full self-center px-4 text-center font-poppins lg:w-1/2 lg:text-left">
-            <h1 class="text-base font-semibold text-secondary md:text-lg">Hello 👋, I'm <span class="my-1 block text-4xl font-bold text-dark lg:text-[40px]">Rifaldi Herikson</span></h1>
-            <h3 class="mb-5 text-base font-semibold text-secondary md:text-lg">Web Programmer</h3>
-            <p class="mb-10 text-base leading-relaxed text-secondary md:text-lg">This portfolio website was developed with HTML and CSS Framework namely <span class="font-semibold">Tailwind CSS.</span></p>
+            <h1 class="dark-mode-text text-base font-semibold text-secondary md:text-lg">Hello 👋, I'm <span class="dark-mode-text my-1 block text-4xl font-bold text-dark lg:text-[40px]">Rifaldi Herikson</span></h1>
+            <h3 class="dark-mode-text mb-5 text-base font-semibold text-secondary md:text-lg">Web Programmer</h3>
+            <p class="dark-mode-text mb-10 text-base leading-relaxed text-secondary md:text-lg">This portfolio website was developed with HTML and CSS Framework namely <span class="font-semibold">Tailwind CSS.</span></p>
             <a href="#" class="btn-ghost mb-10"><i class="bx bxs-download bx-burst mr-2"></i>Download CV</a>
           </div>
           <!-- Profile Img -->
@@ -83,7 +99,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-24">
+    <section id="about" class="dark-mode py-24">
       <div class="container">
         <div class="title-main">
           <h2 class="text-title">About Me</h2>
@@ -92,7 +108,7 @@
         <div class="flex flex-wrap">
           <!-- Introduction -->
           <div class="mb-5 w-full px-4 text-center font-poppins lg:w-1/2">
-            <div class="mb-8 p-4 text-base text-secondary lg:text-justify">
+            <div class="dark-mode-text mb-8 p-4 text-base text-secondary lg:text-justify">
               <span class="font-semibold">Halo,</span> Saya Rifaldi Herikson, S.Kom dari Kota Tanjungpinang, Kepulauan Riau. Lulusan S-1 Sistem Informasi dari Universitas Komputer Indonesia. Dapat bekerja sama dan berkontribusi dalam tim.
               Memiliki pengalaman sebagai Web Programmer dan Enterprise Architect.
             </div>

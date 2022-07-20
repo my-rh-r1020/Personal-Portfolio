@@ -43,3 +43,12 @@ window.addEventListener("scroll", function () {
 //   if (scrollY >= 50) return header.classList.add("scroll-fixed");
 //   else return header.classList.remove("scroll-fixed");
 // });
+
+// ======================== Dark Mode ===============================
+
+const darkToggle = document.getElementById("dark-toggle"),
+  htmlMode = document.querySelector("html");
+
+darkToggle.addEventListener("click", function () {
+  darkToggle.checked ? htmlMode.classList.add("dark") : htmlMode.classList.remove("dark");
+});
