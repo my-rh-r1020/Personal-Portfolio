@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Tailwind CSS</title>
 
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="dist/output.css" />
@@ -16,8 +17,6 @@
 
     <!-- Boxicons -->
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-
-    <title>Portfolio - Tailwind CSS</title>
 
     <script>
       if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
@@ -114,8 +113,31 @@
           <span class="text-subtitle block">My Profile</span>
         </div>
         <div class="flex flex-wrap">
+          <div class="mb-5 flex w-full px-4 lg:mx-auto lg:w-10/12">
+            <div class="w-1/3 py-4 px-2 text-center">
+              <div class="work-card">
+                <i class="bx bx-award"></i>
+                <h3 class="work-title">S1 - Sistem Informasi</h3>
+                <span class="work-subtitle">Universitas Komputer Indonesia</span>
+              </div>
+            </div>
+            <div class="w-1/3 py-4 px-2 text-center">
+              <div class="work-card">
+                <i class="bx bx-award"></i>
+                <h3 class="work-title">Working Experience</h3>
+                <span class="work-subtitle">1 year</span>
+              </div>
+            </div>
+            <div class="w-1/3 py-4 px-2 text-center">
+              <div class="work-card">
+                <i class="bx bx-briefcase-alt-2"></i>
+                <h3 class="work-title">Completed Projects</h3>
+                <span class="work-subtitle">2 Projects</span>
+              </div>
+            </div>
+          </div>
           <!-- Introduction -->
-          <div class="mb-5 w-full px-4 text-center font-poppins lg:w-1/2">
+          <!-- <div class="mb-5 w-full px-4 text-center font-poppins lg:w-1/2">
             <div class="dark-mode-text mb-8 p-4 text-base text-secondary lg:text-justify">
               <span class="font-semibold">Halo,</span> Saya Rifaldi Herikson, S.Kom dari Kota Tanjungpinang, Kepulauan Riau. Lulusan S-1 Sistem Informasi dari Universitas Komputer Indonesia. Dapat bekerja sama dan berkontribusi dalam tim.
               Memiliki pengalaman sebagai Web Programmer dan Enterprise Architect.
@@ -123,9 +145,9 @@
             <div class="mb-10 lg:ml-4 lg:text-left">
               <a href="#contact" class="btn-ghost">Contact Me</a>
             </div>
-          </div>
+          </div> -->
           <!-- Work Experience -->
-          <div class="flex w-full gap-2 px-4 font-poppins lg:mt-4 lg:w-1/2">
+          <!-- <div class="flex w-full gap-2 px-4 font-poppins lg:mt-4 lg:w-1/2">
             <div class="w-1/2 text-center">
               <div class="work-card">
                 <i class="bx bx-award"></i>
@@ -140,7 +162,7 @@
                 <span class="work-subtitle">2 Projects</span>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
