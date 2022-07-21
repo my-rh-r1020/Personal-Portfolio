@@ -67,10 +67,10 @@
     @apply translate-x-5;
   }
   .work-card {
-    @apply mb-2 rounded-xl border border-slate-200 px-3 py-4 shadow-md dark:bg-darkThemeNav;
+    @apply mb-2 rounded-xl border border-slate-200 p-3 shadow-md dark:bg-darkThemeNav;
   }
   .work-card i {
-    @apply py-3 text-xl dark:text-iconsSub;
+    @apply py-2 text-xl dark:text-iconsSub;
   }
   .work-title {
     @apply mb-1 text-sm font-semibold dark:text-iconsSub;
