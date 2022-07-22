@@ -88,8 +88,8 @@
           <!-- Profile Img -->
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-10 lg:right-0 lg:mt-0">
-              <img src="dist/img/profile-img.png" alt="profile-img" class="relative z-10 mx-auto max-w-full rounded-xl" />
-              <span class="absolute bottom-5 left-1/2 -translate-x-1/2 md:scale-110 lg:scale-125">
+              <img src="dist/img/profile-img.png" alt="profile-img" class="mx-auto max-w-full rounded-xl dark:relative dark:z-10" />
+              <span class="absolute bottom-5 left-1/2 -z-10 -translate-x-1/2 dark:z-0 md:scale-110 lg:scale-125">
                 <img src="dist/img/blob.svg" alt="blob" />
                 <!-- <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -184,13 +184,89 @@
           <span class="text-subtitle block">My Abilities</span>
         </div>
         <div class="flex w-full flex-wrap px-4 font-poppins lg:mx-auto lg:w-10/12">
-          <div class="w-1/3 p-4">
-            <div class="rounded-2xl bg-slate-100 pt-4 text-center">
-              <i class="bx bxl-linkedin-square text-4xl md:text-6xl"></i>
-              <h3 class="mb-3 font-semibold">Frontend Web</h3>
-              <div class="ml-4 flex items-center pb-4 text-left">
-                <i class="bx bxl-linkedin-square text-2xl"></i>
-                <span class="ml-2">HTML</span>
+          <!-- Frontend -->
+          <div class="w-full p-4 md:w-1/2 lg:w-1/3">
+            <div class="skill-card">
+              <div class="py-5 text-center">
+                <img src="dist/img/Front-End.svg" alt="front-end" width="50px" class="mx-auto mb-2" />
+                <h3 class="skill-title">Frontend Web</h3>
+              </div>
+              <div class="flex flex-wrap px-2 pb-5">
+                <div class="w-1/2">
+                  <div class="skill-list">
+                    <i class="bx bxl-html5 text-3xl text-[#E34F26]"></i>
+                    <span class="skill-list-name">HTML5</span>
+                  </div>
+                  <div class="skill-list">
+                    <i class="bx bxl-css3 text-3xl text-[#1572B6]"></i>
+                    <span class="skill-list-name">CSS</span>
+                  </div>
+                  <div class="skill-list">
+                    <i class="bx bxl-bootstrap text-3xl text-[#7952B3]"></i>
+                    <span class="skill-list-name">Bootstrap</span>
+                  </div>
+                  <div class="skill-list">
+                    <i class="bx bxl-tailwind-css text-3xl text-[#06B6D4]"></i>
+                    <span class="skill-list-name">Tailwind</span>
+                  </div>
+                </div>
+                <div class="w-1/2">
+                  <div class="skill-list">
+                    <i class="bx bxl-javascript text-3xl text-[#F7DF1E]"></i>
+                    <span class="skill-list-name">Javascript</span>
+                  </div>
+                  <div class="skill-list">
+                    <i class="bx bxl-react text-3xl text-[#61DAFB]"></i>
+                    <span class="skill-list-name">React JS</span>
+                  </div>
+                  <div class="skill-list">
+                    <img src="dist/img/nextdotjs.svg" alt="nextdotjs" width="29px" />
+                    <span class="skill-list-name">Next JS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Backend -->
+          <div class="w-full p-4 md:w-1/2 lg:w-1/3">
+            <div class="skill-card">
+              <div class="py-5 text-center">
+                <img src="dist/img/Front-End.svg" alt="back-end" width="50px" class="mx-auto mb-2" />
+                <h3 class="skill-title">Backend Web</h3>
+              </div>
+              <div class="flex flex-wrap px-2 pb-5">
+                <div class="w-1/2">
+                  <div class="skill-list">
+                    <i class="bx bxl-javascript text-3xl text-[#F7DF1E]"></i>
+                    <span class="skill-list-name">PHP</span>
+                  </div>
+                  <div class="skill-list">
+                    <i class="bx bxl-javascript text-3xl text-[#F7DF1E]"></i>
+                    <span class="skill-list-name">Codeigniter</span>
+                  </div>
+                  <div class="skill-list">
+                    <i class="bx bxl-javascript text-3xl text-[#F7DF1E]"></i>
+                    <span class="skill-list-name">Node JS</span>
+                  </div>
+                  <div class="skill-list">
+                    <i class="bx bxl-javascript text-3xl text-[#F7DF1E]"></i>
+                    <span class="skill-list-name">Express JS</span>
+                  </div>
+                </div>
+                <div class="w-1/2">
+                  <div class="skill-list">
+                    <i class="bx bxl-javascript text-3xl text-[#F7DF1E]"></i>
+                    <span class="skill-list-name">Rest API</span>
+                  </div>
+                  <div class="skill-list">
+                    <i class="bx bxl-javascript text-3xl text-[#F7DF1E]"></i>
+                    <span class="skill-list-name">MySQL</span>
+                  </div>
+                  <div class="skill-list">
+                    <i class="bx bxl-javascript text-3xl text-[#F7DF1E]"></i>
+                    <span class="skill-list-name">MongoDB</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

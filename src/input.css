@@ -66,6 +66,18 @@
   #dark-toggle:checked ~ label div.toggle-circle {
     @apply translate-x-5;
   }
+  .skill-card {
+    @apply rounded-2xl bg-slate-50 dark:bg-darkThemeNav;
+  }
+  .skill-title {
+    @apply text-lg font-semibold dark:text-iconsSub;
+  }
+  .skill-list {
+    @apply mx-4 mb-2 flex items-center;
+  }
+  .skill-list-name {
+    @apply ml-2 text-[14px] dark:text-iconsSub;
+  }
   .work-card {
     @apply mb-2 rounded-xl border border-slate-200 p-3 shadow-md dark:bg-darkThemeNav;
   }

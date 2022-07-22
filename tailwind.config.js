@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         dark: "#334155",
         secondary: "#64748b",
-        linkedin: "#0077B5",
+        linkedin: "#0A66C2",
         github: "#171515",
         whatsapp: "#25D366",
         // Using modern hsl 'convert' color
