@@ -9,6 +9,9 @@
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="dist/output.css" />
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="src/swiper-bundle.min.css" />
+
     <!-- Font Google -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 
@@ -141,7 +144,7 @@
           <div class="flex w-full gap-2 px-4 font-poppins lg:mt-4 lg:w-1/2">
             <div class="w-1/3 text-center">
               <div class="work-card">
-                <i class="bx bx-award"></i>
+                <i class="bx bxs-graduation"></i>
                 <h3 class="work-title">S1 - Sistem Informasi</h3>
                 <span class="work-subtitle">UNIKOM</span>
               </div>
@@ -291,39 +294,83 @@
           <h2 class="text-title">Portfolio</h2>
           <span class="text-subtitle block">Recent Projects</span>
         </div>
-        <div class="flex w-full flex-wrap justify-center px-4 font-poppins lg:mx-auto lg:w-10/12">
-          <div class="p-4 md:w-1/2">
-            <div class="portfolio-card">
-              <img src="dist/img/work1.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
-              <h3 class="portfolio-title">Landing Page Tailwind CSS</h3>
-              <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-              <a href="#" class="portfolio-link">Demo</a>
+        <div class="swiper portfolio-list">
+          <div class="swiper-wrapper mb-8">
+            <!-- v1 -->
+            <!-- <div class="swiper-slide flex">
+              <div class="p-4 md:w-1/2">
+                <div class="portfolio-card">
+                  <img src="dist/img/work1.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
+                  <h3 class="portfolio-title">Landing Page Tailwind CSS</h3>
+                  <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
+                  <a href="#" class="portfolio-link">Demo</a>
+                </div>
+              </div>
+              <div class="p-4 md:w-1/2">
+                <div class="portfolio-card">
+                  <img src="dist/img/work2.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
+                  <h3 class="portfolio-title">Event Ticket Sales Web</h3>
+                  <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
+                  <a href="#" class="portfolio-link">Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex">
+              <div class="p-4 md:w-1/2">
+                <div class="portfolio-card">
+                  <img src="dist/img/work3.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
+                  <h3 class="portfolio-title">E-Learning Web</h3>
+                  <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
+                  <a href="#" class="portfolio-link">Demo</a>
+                </div>
+              </div>
+              <div class="p-4 md:w-1/2">
+                <div class="portfolio-card">
+                  <img src="dist/img/work4.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
+                  <h3 class="portfolio-title">Financial Report Web</h3>
+                  <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
+                  <a href="#" class="portfolio-link">Demo</a>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- v2 -->
+            <div class="swiper-slide p-4 md:w-1/2">
+              <div class="portfolio-card">
+                <img src="dist/img/work1.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
+                <h3 class="portfolio-title">Landing Page Tailwind CSS</h3>
+                <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
+                <a href="#" class="portfolio-link">Demo</a>
+              </div>
+            </div>
+            <div class="swiper-slide p-4 md:w-1/2">
+              <div class="portfolio-card">
+                <img src="dist/img/work2.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
+                <h3 class="portfolio-title">Event Ticket Sales Web</h3>
+                <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
+                <a href="#" class="portfolio-link">Demo</a>
+              </div>
+            </div>
+            <div class="swiper-slide p-4 md:w-1/2">
+              <div class="portfolio-card">
+                <img src="dist/img/work3.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
+                <h3 class="portfolio-title">E-Learning Web</h3>
+                <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
+                <a href="#" class="portfolio-link">Demo</a>
+              </div>
+            </div>
+            <div class="swiper-slide p-4 md:w-1/2">
+              <div class="portfolio-card">
+                <img src="dist/img/work4.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
+                <h3 class="portfolio-title">Financial Report Web</h3>
+                <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
+                <a href="#" class="portfolio-link">Demo</a>
+              </div>
             </div>
           </div>
-          <div class="p-4 md:w-1/2">
-            <div class="portfolio-card">
-              <img src="dist/img/work2.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
-              <h3 class="portfolio-title">Event Ticket Sales Web</h3>
-              <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-              <a href="#" class="portfolio-link">Demo</a>
-            </div>
-          </div>
-          <div class="p-4 md:w-1/2">
-            <div class="portfolio-card">
-              <img src="dist/img/work3.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
-              <h3 class="portfolio-title">E-Learning Web</h3>
-              <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-              <a href="#" class="portfolio-link">Demo</a>
-            </div>
-          </div>
-          <div class="p-4 md:w-1/2">
-            <div class="portfolio-card">
-              <img src="dist/img/work4.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
-              <h3 class="portfolio-title">Financial Report Web</h3>
-              <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-              <a href="#" class="portfolio-link">Demo</a>
-            </div>
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -408,5 +455,36 @@
 
     <!-- JS -->
     <script src="dist/js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="dist/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      let swiperPortfolio = new Swiper(".portfolio-list", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

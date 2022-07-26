@@ -929,6 +929,24 @@ video {
   color: rgb(250 251 255 / var(--tw-text-opacity));
 }
 
+.portfolio-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: Poppins;
+}
+
+@media (min-width: 1024px) {
+  .portfolio-list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 83.333333%;
+  }
+}
+
 .portfolio-card {
   overflow: hidden;
   border-radius: 0.5rem;
