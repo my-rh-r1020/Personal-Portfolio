@@ -57,22 +57,29 @@ darkToggle.addEventListener("click", function () {
     iconNow.classList.remove("bxs-sun");
     iconNow.classList.add(iconTheme);
 
-    console.log(iconNow);
     localStorage.theme = "dark";
+    localStorage.selectedIcon = "bx bxs-moon";
   } else {
     htmlMode.classList.remove("dark");
     iconNow.classList.remove(iconTheme);
     iconNow.classList.add("bxs-sun");
 
-    console.log(iconNow);
     localStorage.theme = "light";
+    localStorage.selectedIcon = "bx bxs-sun";
   }
 });
 
 // ========================= Toggle Move According Mode ===============================
 
+// Cek Theme in LocalStorage
 if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
   darkToggle.checked = true;
 } else {
   darkToggle.checked = false;
+}
+
+// Cek Icon in LocalStorage
+if (localStorage.selectedIcon === "bx bxs-moon") {
+  iconNow.classList.remove("bxs-sun");
+  iconNow.classList.add(iconTheme);
 }
