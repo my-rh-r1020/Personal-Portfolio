@@ -107,13 +107,13 @@
     @apply text-[13px] text-secondary transition duration-500 hover:text-primaryAlt dark:text-primary;
   }
   .contact-card {
-    @apply scale-90 rounded-2xl bg-slate-100 py-14 text-center transition duration-500 hover:scale-95 hover:bg-slate-300 dark:bg-darkThemeNav dark:hover:bg-slate-300 md:scale-95 md:hover:scale-100 lg:scale-100 lg:hover:scale-110;
+    @apply rounded-2xl bg-slate-100 py-14 text-center transition duration-500 hover:scale-110 hover:bg-slate-300 dark:bg-darkThemeNav dark:hover:bg-slate-300;
   }
   .contact-title {
-    @apply text-base font-semibold md:text-lg lg:text-xl;
+    @apply text-lg font-semibold lg:text-xl;
   }
   .contact-subtitle {
-    @apply mx-2 text-sm md:mx-0 lg:text-base;
+    @apply mx-2 text-base md:mx-0;
   }
   .contact-icons {
     /*@apply mr-7 flex h-16 w-16 items-center justify-center rounded-full border-2 border-solid border-slate-300 text-slate-400 transition duration-500;*/

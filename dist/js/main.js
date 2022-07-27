@@ -47,14 +47,24 @@ window.addEventListener("scroll", function () {
 // ======================== Dark Mode ===============================
 
 const darkToggle = document.getElementById("dark-toggle"),
-  htmlMode = document.querySelector("html");
+  iconNow = document.getElementById("iconNow"),
+  htmlMode = document.querySelector("html"),
+  iconTheme = "bxs-moon";
 
 darkToggle.addEventListener("click", function () {
   if (darkToggle.checked) {
     htmlMode.classList.add("dark");
+    iconNow.classList.remove("bxs-sun");
+    iconNow.classList.add(iconTheme);
+
+    console.log(iconNow);
     localStorage.theme = "dark";
   } else {
     htmlMode.classList.remove("dark");
+    iconNow.classList.remove(iconTheme);
+    iconNow.classList.add("bxs-sun");
+
+    console.log(iconNow);
     localStorage.theme = "light";
   }
 });
