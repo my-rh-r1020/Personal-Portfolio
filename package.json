@@ -15,6 +15,7 @@
     "tailwindcss": "^3.1.5"
   },
   "dependencies": {
-    "boxicons": "^2.1.2"
+    "boxicons": "^2.1.2",
+    "scrollreveal": "^4.0.9"
   }
 }

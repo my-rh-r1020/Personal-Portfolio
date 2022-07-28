@@ -66,6 +66,18 @@
   #dark-toggle:checked ~ label div.toggle-circle {
     @apply translate-x-5;
   }
+  .home-greets {
+    @apply w-full self-center px-4 text-center font-poppins lg:w-1/2 lg:text-left;
+  }
+  .home-image {
+    @apply w-full self-end px-4 lg:w-1/2;
+  }
+  .about-data {
+    @apply flex flex-wrap lg:mx-auto lg:w-10/12;
+  }
+  .skill-data {
+    @apply flex w-full flex-wrap px-4 font-poppins lg:mx-auto lg:w-10/12;
+  }
   .skill-card {
     @apply h-[330px] rounded-2xl bg-slate-50 dark:bg-darkThemeNav;
   }
@@ -94,7 +106,7 @@
     @apply flex w-full flex-wrap justify-center px-4 font-poppins lg:mx-auto lg:w-10/12;
   }
   .portfolio-card {
-    @apply overflow-hidden rounded-lg p-5 dark:bg-darkThemeNav;
+    @apply overflow-hidden rounded-lg p-5 hover:scale-105 hover:transition hover:duration-500 dark:bg-darkThemeNav;
     box-shadow: 0 2px 16px rgba(11, 17, 30, 0.1);
   }
   .portfolio-title {
@@ -105,6 +117,9 @@
   }
   .portfolio-link {
     @apply text-[13px] text-secondary transition duration-500 hover:text-primaryAlt dark:text-primary;
+  }
+  .contact-data {
+    @apply flex w-full flex-wrap px-4 font-poppins lg:mx-auto lg:w-10/12;
   }
   .contact-card {
     @apply rounded-2xl bg-slate-100 py-14 text-center transition duration-500 hover:scale-110 hover:bg-slate-300 dark:bg-darkThemeNav dark:hover:bg-slate-300;
@@ -127,5 +142,17 @@
   }
   .dark-mode-text {
     @apply dark:text-iconsSub;
+  }
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    @apply w-4 rounded-md bg-slate-300 dark:bg-[#595f69];
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-[#3d4148];
+  }
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#2f3237];
   }
 }

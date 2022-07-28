@@ -1,4 +1,3 @@
-// import "boxicons";
 // ================================= Scroll Fixed ====================================
 
 window.onscroll = function () {
@@ -83,3 +82,36 @@ if (localStorage.selectedIcon === "bx bxs-moon") {
   iconNow.classList.remove("bxs-sun");
   iconNow.classList.add(iconTheme);
 }
+
+// ================================= Scroll Reveal ====================================
+
+// Configuration for Scroll Reveal
+const sreveal = ScrollReveal({
+  distance: "60px",
+  duration: 2000,
+  delay: 400,
+  // reset: true,
+});
+
+// DOM Selection
+const homeGreets = document.querySelector(".home-greets"),
+  homeImage = document.querySelector(".home-image"),
+  titleMain = document.querySelectorAll(".title-main"),
+  aboutData = document.querySelector(".about-data"),
+  skillData = document.querySelector(".skill-data"),
+  portfolioData = document.querySelector(".portfolio-list"),
+  contactData = document.querySelector(".contact-data");
+
+sreveal.reveal(homeGreets, { origin: "left" });
+sreveal.reveal(homeImage, { origin: "right", delay: 700 });
+sreveal.reveal(titleMain, { origin: "top" });
+sreveal.reveal(aboutData, { origin: "bottom", delay: 700 });
+sreveal.reveal(skillData, { origin: "bottom", delay: 700 });
+sreveal.reveal(portfolioData, { scale: 0.85, delay: 700 });
+sreveal.reveal(contactData, {
+  rotate: {
+    x: 20,
+    z: 20,
+  },
+  delay: 700,
+});
