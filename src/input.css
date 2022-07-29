@@ -147,7 +147,7 @@
 
 @layer utilities {
   .scrollbar::-webkit-scrollbar {
-    @apply w-4 rounded-md bg-slate-300 dark:bg-[#595f69];
+    @apply w-3 rounded-md bg-slate-300 dark:bg-[#595f69];
   }
   .scrollbar::-webkit-scrollbar-thumb {
     @apply rounded-md bg-[#3d4148];
