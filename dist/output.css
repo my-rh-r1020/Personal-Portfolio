@@ -1612,7 +1612,6 @@ video {
 
 .scrollbar::-webkit-scrollbar {
   width: 0.75rem;
-  border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
