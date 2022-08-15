@@ -84,9 +84,12 @@
           <!-- Greetings -->
           <div class="home-greets">
             <h1 class="dark-mode-text text-base font-semibold text-secondary md:text-lg">Hello 👋, I'm <span class="dark-mode-text my-1 block text-4xl font-bold text-dark lg:text-[40px]">Rifaldi Herikson</span></h1>
-            <h3 class="dark-mode-text mb-5 text-base font-semibold text-secondary md:text-lg">Web Programmer</h3>
-            <p class="dark-mode-text mb-10 text-base leading-relaxed text-secondary md:text-lg">This portfolio website was developed with HTML and CSS Framework namely <span class="font-semibold">Tailwind CSS.</span></p>
-            <a href="#" class="btn-ghost mb-10"><i class="bx bxs-download bx-burst mr-2"></i>Download CV</a>
+            <h3 class="dark-mode-text mb-5 text-base font-semibold text-secondary md:text-lg">Web Developer</h3>
+            <p class="dark-mode-text mb-10 text-base leading-relaxed text-secondary md:text-lg">
+              This portfolio website attaches a CV file<br />
+              <span class="text-red-500">*</span><span class="text-sm">Attention, please use this file </span><span class="text-sm font-semibold">according to the applicable procedure</span>
+            </p>
+            <a download="" href="#" class="btn-ghost mb-10"><i class="bx bxs-download bx-burst mr-2"></i>Download CV</a>
           </div>
           <!-- Profile Img -->
           <div class="home-image">
@@ -136,7 +139,7 @@
               <div class="work-card">
                 <i class="bx bx-briefcase-alt-2"></i>
                 <h3 class="work-title">Completed Projects</h3>
-                <span class="work-subtitle">2 Projects</span>
+                <span class="work-subtitle">3 Projects</span>
               </div>
             </div>
           </div>
@@ -144,8 +147,7 @@
           <!-- Introduction -->
           <div class="mb-5 w-full px-4 text-center font-poppins lg:w-1/2">
             <div class="dark-mode-text mb-8 p-4 text-base text-secondary lg:text-justify">
-              <span class="font-semibold">Halo,</span> Saya Rifaldi Herikson, S.Kom dari Kota Tanjungpinang, Kepulauan Riau. Lulusan S-1 Sistem Informasi dari Universitas Komputer Indonesia (UNIKOM). Dapat bekerja sama dan berkontribusi
-              dalam tim. Memiliki pengalaman sebagai Web Programmer dan Enterprise Architect.
+              <span class="font-semibold">Hello,</span> I'm a web developer. Has the capability of a full-stack web. Can work individually or in a team. Passionate and motivated to try and learn technology.
             </div>
             <div class="mb-10 lg:ml-4 lg:text-left">
               <a href="#contact" class="btn-ghost">Contact Me</a>
@@ -217,6 +219,10 @@
               <div class="flex flex-wrap px-2 pb-5">
                 <div class="w-1/2">
                   <div class="skill-list">
+                    <img src="dist/img/codeigniter.svg" alt="codeigniter" width="29" />
+                    <span class="skill-list-name">CodeIgniter</span>
+                  </div>
+                  <div class="skill-list">
                     <i class="bx bxl-nodejs text-3xl text-[#339933]"></i>
                     <span class="skill-list-name">Node JS</span>
                   </div>
@@ -228,15 +234,15 @@
                     <img src="dist/img/postman.svg" alt="postman-api" width="29" />
                     <span class="skill-list-name">Rest API</span>
                   </div>
-                  <div class="skill-list">
-                    <i class="bx bxl-mongodb text-3xl text-[#47A248]"></i>
-                    <span class="skill-list-name">MongoDB</span>
-                  </div>
                 </div>
                 <div class="w-1/2">
                   <div class="skill-list">
                     <img src="dist/img//mysql.svg" alt="mysql" width="29" />
                     <span class="skill-list-name">MySQL</span>
+                  </div>
+                  <div class="skill-list">
+                    <i class="bx bxl-mongodb text-3xl text-[#47A248]"></i>
+                    <span class="skill-list-name">MongoDB</span>
                   </div>
                 </div>
               </div>
@@ -246,7 +252,9 @@
           <div class="w-full py-4 px-2 md:w-1/2 lg:w-1/2 xl:w-1/3">
             <div class="skill-card">
               <div class="pt-5 pb-7 text-center">
-                <img src="dist/img/addthis.svg" alt="other-skill" width="50px" class="mx-auto mb-2 rounded-full" />
+                <div class="mx-auto mb-2 flex h-[50px] w-[50px] items-center justify-center rounded-full bg-[#E9DAFF]">
+                  <i class="bx bxs-edit text-[32px] text-[#77bef8]"></i>
+                </div>
                 <h3 class="skill-title">Other Skill</h3>
               </div>
               <div class="flex flex-wrap px-2 pb-5">
@@ -360,31 +368,31 @@
         </div>
         <div class="contact-data">
           <div class="w-full p-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
-            <div class="contact-card">
-              <a href="#" class="contact-icons hover:border-linkedin hover:text-linkedin">
-                <i class="bx bxl-linkedin-square text-6xl lg:text-8xl"></i>
-                <h3 class="contact-title">LinkedIn</h3>
-                <span class="contact-subtitle">Rifaldi Herikson</span>
-              </a>
-            </div>
+            <a href="mailto:rifaldiherikson.work@gmail.com" target="_blank" class="contact-icons">
+              <div class="contact-card hover:border-[#EA4335] hover:text-[#EA4335]">
+                <i class="bx bxl-gmail text-6xl lg:text-8xl"></i>
+                <h3 class="contact-title">Email</h3>
+                <span class="contact-subtitle">Send Email</span>
+              </div>
+            </a>
           </div>
           <div class="w-full p-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
-            <div class="contact-card">
-              <a href="#" class="contact-icons hover:border-github hover:text-github">
+            <a href="https://github.com/my-rh-r1020" target="_blank" class="contact-icons">
+              <div class="contact-card hover:border-github hover:text-github">
                 <i class="bx bxl-github text-6xl lg:text-8xl"></i>
                 <h3 class="contact-title">Github</h3>
-                <span class="contact-subtitle">Rifaldi Herikson</span>
-              </a>
-            </div>
+                <span class="contact-subtitle">View Profile</span>
+              </div>
+            </a>
           </div>
           <div class="w-full p-4 md:w-1/2 lg:w-1/2 xl:w-1/3">
-            <div class="contact-card">
-              <a href="#" class="contact-icons hover:border-whatsapp hover:text-whatsapp">
+            <a href="https://wa.me/6287824149534" target="_blank" class="contact-icons">
+              <div class="contact-card hover:border-whatsapp hover:text-whatsapp">
                 <i class="bx bxl-whatsapp text-6xl lg:text-8xl"></i>
                 <h3 class="contact-title">Whatsapp</h3>
-                <span class="contact-subtitle">628 *** *** ****</span>
-              </a>
-            </div>
+                <span class="contact-subtitle">Chat Here</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -396,7 +404,7 @@
         <h2 class="mb-5 px-4 text-3xl font-bold text-icons">Rifaldi H</h2>
         <div class="flex flex-wrap">
           <div class="mb-12 w-full px-4 font-medium text-icons">
-            <h3 class="mb-2 text-xl font-semibold underline">Tautan</h3>
+            <h3 class="mb-2 text-xl font-semibold underline">Link</h3>
             <ul class="flex justify-start gap-6 text-sm">
               <li><a href="#home" class="footer-link">Home</a></li>
               <li><a href="#about" class="footer-link">Profile</a></li>
