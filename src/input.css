@@ -106,7 +106,7 @@
     @apply flex w-full flex-wrap justify-center px-4 font-poppins lg:mx-auto lg:w-10/12;
   }
   .portfolio-card {
-    @apply overflow-hidden rounded-lg p-5 hover:scale-105 hover:transition hover:duration-500 dark:bg-darkThemeNav;
+    @apply overflow-hidden rounded-lg p-5 hover:scale-110 hover:transition hover:duration-500 dark:bg-darkThemeNav;
     box-shadow: 0 2px 16px rgba(11, 17, 30, 0.1);
   }
   .portfolio-title {
