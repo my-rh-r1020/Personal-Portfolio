@@ -110,13 +110,16 @@
     box-shadow: 0 2px 16px rgba(11, 17, 30, 0.1);
   }
   .portfolio-title {
-    @apply mb-2 truncate text-base font-semibold dark:text-iconsSub;
+    @apply mb-3 truncate text-base font-semibold dark:text-iconsSub;
   }
   .portfolio-desc {
     @apply mb-[10px] text-justify text-[14px] text-slate-600 dark:text-iconsSub;
   }
   .portfolio-link {
     @apply text-[13px] text-secondary transition duration-500 hover:text-primaryAlt dark:text-primary;
+  }
+  .portfolio-badge {
+    @apply mb-1 w-max rounded-md border-[2px] p-1 text-xs dark:text-white;
   }
   .contact-data {
     @apply flex w-full flex-wrap px-4 font-poppins lg:mx-auto lg:w-10/12;

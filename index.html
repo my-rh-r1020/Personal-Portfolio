@@ -85,9 +85,10 @@
           <div class="home-greets">
             <h1 class="dark-mode-text text-base font-semibold text-secondary md:text-lg">Hello 👋, I'm <span class="dark-mode-text my-1 block text-4xl font-bold text-dark lg:text-[40px]">Rifaldi Herikson</span></h1>
             <h3 class="dark-mode-text mb-5 text-base font-semibold text-secondary md:text-lg">Web Developer</h3>
-            <p class="dark-mode-text mb-10 text-base leading-relaxed text-secondary md:text-lg">
-              This portfolio website attaches a CV file<br />
-              <span class="text-red-500">*</span><span class="text-sm">Attention, please use this file </span><span class="text-sm font-semibold">according to the applicable procedure</span>
+            <p class="dark-mode-text mb-10 text-base leading-relaxed text-secondary md:text-base">
+              <!-- This portfolio website attaches a CV file<br /> -->
+              <span class="font-bold md:text-xl">"</span> Has the capability of a full-stack web. Can work individually or in a team. Passionate and motivated to try and learn technology <span class="font-bold md:text-xl">"</span> <br />
+              <!-- <span class="text-red-500">*</span><span class="text-sm">Attention, please use this file </span><span class="text-sm font-semibold">according to the applicable procedure</span> -->
             </p>
             <a href="dist/cv/rifaldi-cv.pdf" download="Rifaldi-CV" class="btn-ghost mb-10"><i class="bx bxs-download bx-burst mr-2"></i>Download CV</a>
           </div>
@@ -283,33 +284,42 @@
             <!-- List Projects -->
             <div class="swiper-slide p-4 md:w-1/2">
               <div class="portfolio-card">
-                <img src="dist/img/work1.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
-                <h3 class="portfolio-title">Landing Page Tailwind CSS</h3>
-                <p class="portfolio-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, perferendis vel? Odio.</p>
-                <a href="#" class="portfolio-link">Demo</a>
-              </div>
-            </div>
-            <div class="swiper-slide p-4 md:w-1/2">
-              <div class="portfolio-card">
                 <img src="dist/img/project-1.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl hover:cursor-pointer" />
                 <h3 class="portfolio-title">Semina Booking Event</h3>
-                <p class="portfolio-desc">Developed with MERN (Mongo, Express, React, Next) <br />2022</p>
+                <div class="portfolio-badge border-x-[#61DAFB] border-y-[#339933]">MERN Stack</div>
                 <a href="#" class="portfolio-link">Demo</a>
               </div>
             </div>
             <div class="swiper-slide p-4 md:w-1/2">
               <div class="portfolio-card">
-                <img src="dist/img/project-2.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl hover:cursor-pointer" />
-                <h3 class="portfolio-title">E-Learning Web</h3>
-                <p class="portfolio-desc">Developed with CodeIgniter 3, Bootstrap 4, MySQL <br />2019</p>
+                <img src="dist/img/project-2.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl" />
+                <h3 class="portfolio-title">Frontend Online Shop</h3>
+                <div class="portfolio-badge border-[#7952B3]">Bootstrap 4</div>
                 <a href="#" class="portfolio-link">Demo</a>
               </div>
             </div>
             <div class="swiper-slide p-4 md:w-1/2">
               <div class="portfolio-card">
                 <img src="dist/img/project-3.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl hover:cursor-pointer" />
-                <h3 class="portfolio-title">Financial Report Web App</h3>
-                <p class="portfolio-desc">Developed with PHP, Javascript, HTML, CSS <br />2018</p>
+                <h3 class="portfolio-title">E-Learning Web</h3>
+                <div class="flex">
+                  <div class="portfolio-badge mr-1 border-[#EF4223]">CodeIgniter 3</div>
+                  <div class="portfolio-badge mr-1 border-[#7952B3]">Bootstrap 4</div>
+                  <div class="portfolio-badge border-[#4479A1]">MySQL</div>
+                </div>
+                <a href="#" class="portfolio-link">Demo</a>
+              </div>
+            </div>
+            <div class="swiper-slide p-4 md:w-1/2">
+              <div class="portfolio-card">
+                <img src="dist/img/project-4.jpg" alt="projects-img" width="w-full" class="mb-4 rounded-xl hover:cursor-pointer" />
+                <h3 class="portfolio-title">Financial Report Web</h3>
+                <div class="flex">
+                  <div class="portfolio-badge mr-1 border-[#777BB4]">PHP</div>
+                  <div class="portfolio-badge mr-1 border-[#F7DF1E]">Javascript</div>
+                  <div class="portfolio-badge mr-1 border-[#1572B6]">CSS</div>
+                  <div class="portfolio-badge border-[#4479A1]">MySQL</div>
+                </div>
                 <a href="#" class="portfolio-link">Demo</a>
               </div>
             </div>
@@ -363,7 +373,6 @@
     <!-- Footer -->
     <footer class="bg-primary pt-16 pb-12">
       <div class="container">
-        <h2 class="mb-5 px-4 text-3xl font-bold text-icons">Rifaldi H</h2>
         <div class="flex flex-wrap">
           <div class="mb-12 w-full px-4 font-medium text-icons">
             <h3 class="mb-2 text-xl font-semibold underline">Link</h3>
