@@ -75,6 +75,18 @@
   .about-data {
     @apply flex flex-wrap lg:mx-auto lg:w-10/12;
   }
+  .about-card {
+    @apply mb-2 rounded-xl border border-slate-200 p-3 text-center shadow-md dark:bg-darkThemeNav dark:text-iconsSub;
+  }
+  .about-card i {
+    @apply pt-2 text-2xl dark:text-iconsSub;
+  }
+  .about-title {
+    @apply text-lg;
+  }
+  .about-number {
+    @apply my-2 text-3xl font-semibold;
+  }
   .skill-data {
     @apply flex w-full flex-wrap px-4 font-poppins lg:mx-auto lg:w-10/12;
   }
