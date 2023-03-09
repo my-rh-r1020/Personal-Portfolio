@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html", "pages/semina-project.html"],
+  content: ["./index.html", "./pages/*.html"],
   darkMode: "class",
   theme: {
     container: {

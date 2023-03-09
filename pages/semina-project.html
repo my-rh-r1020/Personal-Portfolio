@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -55,28 +55,46 @@
     <section class="dark-mode py-28">
       <div class="container">
         <!-- Breadcrumbs -->
-        <nav class="flex" aria-label="breadcrumb">
-          <ol class="flex space-x-2 rounded-md p-2">
-            <li><a href="../index.html" class="text-white">Home</a></li>
-            <li><span> / </span><span>Semina Booking Project</span></li>
+        <nav class="nav-detail" aria-label="breadcrumb">
+          <ol class="flex space-x-1 rounded-md px-4 text-sm">
+            <li><a href="../index.html" class="hover:font-medium dark:text-iconsSub">Home</a></li>
+            <li><span class="text-gray-400">/ Semina Booking Event</span></li>
           </ol>
         </nav>
+
+        <!-- Detail Content -->
+        <div class="detail-desc">
+          <h2 class="text-detail">Semina Booking Event Project</h2>
+          <img src="../dist/img/project-1.jpg" alt="semina-project" width="50%" class="mx-auto mb-8 rounded-md" />
+          <p class="text-detail-desc mb-3">
+            SEMINA Booking Event is a website that provides various best events to help improve skills in the field of Technology. This project is an online bootcamp project organized by BuildWith Angga (BWA) for 2 months from
+            <b>March to May 2022</b>.
+          </p>
+          <div class="mb-8 flex">
+            <span class="text-detail-desc mr-2">Developed with :</span>
+            <div class="portfolio-badge border-x-[#61DAFB] border-y-[#339933]">MERN (MongoDB Express React Next)</div>
+          </div>
+          <span class="text-detail-desc underline">Detail Project</span>
+          <div class="mt-4 flex">
+            <div class="column-img-desc">
+              <img src="../dist/img/project-1.jpg" alt="semina-project" class="mb-1 w-full rounded-md" />
+              <span class="text-img-desc">Dashboard</span>
+            </div>
+            <div class="column-img-desc">
+              <img src="../dist/img/project-1.jpg" alt="semina-project" class="mb-1 w-full rounded-md" />
+            </div>
+            <div class="column-img-desc">
+              <img src="../dist/img/project-1.jpg" alt="semina-project" class="mb-1 w-full rounded-md" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-primary pt-16 pb-12">
+    <footer class="bg-primary pt-14 pb-10">
       <div class="container">
-        <div class="flex flex-wrap">
-          <div class="mb-12 w-full px-4 font-medium text-icons">
-            <h3 class="mb-2 text-xl font-semibold underline">Link</h3>
-            <ul class="flex justify-start gap-6 text-sm">
-              <li><a href="../index.html" class="footer-link">Home</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="w-full border-t border-slate-400 pt-10">
+        <div class="w-full">
           <span class="ml-4 text-sm text-icons">&#169; 2022 <span class="font-semibold">Rifaldi H</span>. All Rights Reserved</span>
         </div>
       </div>
