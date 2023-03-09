@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project | Semina Booking Event</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <script>
+      if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+
+    <!-- Scroll Reveal JS -->
+    <script src="dist/js/scrollreveal.min.js"></script>
+  </head>
+  <body class="scrollbar">
+    <!-- Navbar Section -->
+    <header class="header-nav">
+      <nav class="container">
+        <div class="relative flex items-center justify-between">
+          <!-- Logo -->
+          <div class="px-4 py-6">
+            <a href="../index.html" class="block font-poppins font-semibold text-primary">Rifaldi H</a>
+          </div>
+
+          <!-- Theme Change Button -->
+          <div class="flex">
+            <span class="mr-2 font-poppins text-sm text-primary">Mode</span>
+            <input type="checkbox" class="hidden" id="dark-toggle" />
+            <label for="dark-toggle">
+              <div class="flex h-5 w-10 cursor-pointer items-center rounded-full bg-slate-400 p-0.5">
+                <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300">
+                  <span class="flex items-center justify-center text-base text-yellow-500 dark:text-darkTheme">
+                    <i class="bx bxs-sun" id="iconNow"></i>
+                  </span>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Detail Section -->
+    <section class="dark-mode py-28">
+      <div class="container">
+        <!-- Breadcrumbs -->
+        <nav class="flex" aria-label="breadcrumb">
+          <ol class="flex space-x-2 rounded-md p-2">
+            <li><a href="../index.html" class="text-white">Home</a></li>
+            <li><span> / </span><span>Semina Booking Project</span></li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary pt-16 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mb-12 w-full px-4 font-medium text-icons">
+            <h3 class="mb-2 text-xl font-semibold underline">Link</h3>
+            <ul class="flex justify-start gap-6 text-sm">
+              <li><a href="../index.html" class="footer-link">Home</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full border-t border-slate-400 pt-10">
+          <span class="ml-4 text-sm text-icons">&#169; 2022 <span class="font-semibold">Rifaldi H</span>. All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../dist/js/main.js"></script>
+  </body>
+</html>
